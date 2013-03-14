@@ -8,7 +8,7 @@ public class Matchers {
 	 * @param exception The exception class of the exception, that should be thrown by
 	 *                  the {@link ThrowingContext}.
 	 * @param badValue  The value that will cause the exception to be thrown.
-	 * @return			The generated {@link ExceptionMatcher} for the given parameters.
+	 * @return          The generated {@link ExceptionMatcher} for the given parameters.
 	 */
 	public static <T, S extends ThrowingContext<T>> ExceptionMatcher<T, S> throwsEx(
 			Class<? extends Throwable> exception, T badValue) {
