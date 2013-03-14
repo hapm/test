@@ -1,11 +1,8 @@
-package de.hapm.test.test;
+package de.hapm.test;
 
 import static org.junit.Assert.*;
 import static de.hapm.test.Matchers.*;
-
-
 import org.junit.Test;
-
 import de.hapm.test.ExceptionMatcher;
 import de.hapm.test.ThrowingContext;
 
