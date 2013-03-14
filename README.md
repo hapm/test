@@ -2,21 +2,20 @@ Simple JUnit test extensions
 ============================
 This little package adds a matcher for exceptions to JUnits matcher catalog. I tried to make it as 
 easy as possible, so you don't need the throw/catch/fail() structure anymore, and get quite well 
-formated information about what went wrong, as you know it from other matchers.
+formated information about what went wrong, similar to other known matchers.
 
 ## Installation
 
-For now, there is no maven repository hosting this. If it get something bigger than what it is 
-actually, I'll see if I publish it somewhere. For now you need to check it out, compile it, and 
-install it to your local maven artifact repository.
+For now, there is no maven repository hosting this. If it get any bigger than what it currently is, 
+I'll see if I can publish it somewhere. For now you need to check it out, compile it, and install it 
+to your local maven artifact repository.
 
 ## Usage
 
 First of all, reference the package from your current project, by adding the package to your 
 classpath for JUnit executions. How to do that, depends on the IDE you are working with. If you 
 have maven support in your project, you can easily add the following to your poms dependencies 
-section (be sure to change the version to what you want it to be, actually there is only 
-0.0.1-SNAPSHOT so):
+section (be sure to change the version to what you want it to be, currently there is only 0.1.0 so):
 
 ```xml
 		<dependency>
@@ -35,7 +34,7 @@ use to create an ExceptionMatcher.
 
 The ExceptionMatcher is used to test your code for throwing expected Exceptions for given values. To
 create one, you can use the [Matchers.throwsEx(...)](src/main/java/de/hapm/test/Matchers.java#L13) 
-method. Here is a little example of how it can look like:
+method. Here is a little example of what it can look like:
 
 ```java
 import static org.junit.Assert.*;
@@ -64,4 +63,4 @@ public class ExceptionMatcherTest {
 
 ## License
 
-This code is distributed under v3 of the [Lether Gerneral Public License](LICENSE.md)
+This code is distributed under v3 of the [GNU Lesser General Public License](LICENSE.md)
